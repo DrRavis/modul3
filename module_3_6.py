@@ -12,7 +12,7 @@ def calculate_structure_sum(data_structure):
     for element in data_structure:
         if isinstance(element, str) == True:
             sum += len(element)
-        elif isinstance(element, int) == True:
+        elif isinstance(element, int) == True or isinstance(element, float):
             sum += element
         elif isinstance(element, dict) == True:
             for key, value in element.items():
